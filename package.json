@@ -1,6 +1,6 @@
 {
   "name": "opentracing-multitracer",
-  "version": "1.0.0-pre.0",
+  "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -12,7 +12,12 @@
     "prettier:format": "prettier --write ./src/**/*.ts",
     "prettier:test": "prettier -l ./src/**/*.ts"
   },
-  "keywords": ["opentracing", "tracing", "tracer", "debug"],
+  "keywords": [
+    "opentracing",
+    "tracing",
+    "tracer",
+    "debug"
+  ],
   "author": "Geoffrey Goodman",
   "license": "MIT",
   "dependencies": {
