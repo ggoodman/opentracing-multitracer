@@ -1,0 +1,39 @@
+{
+  "name": "opentracing-multitracer",
+  "version": "1.0.0-pre.0",
+  "description": "",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "build": "npm run build:clean && npm run build:tsc",
+    "build:clean": "rm -rf ./dist || :",
+    "build:tsc": "tsc --build",
+    "preversion": "npm run prettier:test",
+    "prettier:format": "prettier --write ./src/**/*.ts",
+    "prettier:test": "prettier -l ./src/**/*.ts"
+  },
+  "keywords": ["opentracing", "tracing", "tracer", "debug"],
+  "author": "Geoffrey Goodman",
+  "license": "MIT",
+  "dependencies": {
+    "opentracing": "^0.14.3"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.0",
+    "prettier": "^1.14.3",
+    "typescript": "^3.1.3"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ggoodman/opentracing-multitracer.git"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "tabWidth": 2
+  }
+}
